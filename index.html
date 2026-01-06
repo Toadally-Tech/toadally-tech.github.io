@@ -1,10 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Toadally-Tech by Toad Tech</title>
+    <meta charset="UTF-8">
+    <title>Centered Image Page</title>
+    <style>
+        body {
+            /* Sets background color to black */
+            background-color: black;
+            /* Ensures the body takes up the full screen height */
+            height: 100vh;
+            margin: 0;
+            /* Flexbox centering magic */
+            display: flex;
+            justify-content: center; /* Horizontal centering */
+            align-items: center;     /* Vertical centering */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
-<body style="background-color:black;">
-    <center>
-        <img src="TT.jpg">
-    </center>
+<body>
+    <img src="your-image-url.jpg" alt="Centered Image">
 </body>
 </html>
+
