@@ -5,24 +5,31 @@
     <title>Toadally Tech by Toad Tech</title>
     <style>
         body {
-            /* Sets background color to black */
+            /* 1. Set the background color to black */
             background-color: black;
-            /* Ensures the body takes up the full screen height */
+
+            /* 2. Set the background image path */
+            background-image: url('TT.jpg');
+
+            /* 3. Center the image horizontally and vertically */
+            background-position: center center;
+
+            /* 4. Prevent the image from repeating if it's smaller than the screen */
+            background-repeat: no-repeat;
+
+            /* 5. Scale the image:
+               Use 'cover' to fill the entire screen (some cropping may occur)
+               Use 'contain' to show the full image (black bars may appear on sides) */
+            background-size: cover;
+
+            /* 6. Ensure the body covers the full height of the browser window */
             height: 100vh;
             margin: 0;
-            /* Flexbox centering magic */
-            display: flex;
-            justify-content: center; /* Horizontal centering */
-            align-items: center;     /* Vertical centering */
-        }
-        img {
-            max-width: 100%;
-            height: auto;
         }
     </style>
 </head>
 <body>
-    <img src="TT.jpg" alt="Centered Image">
+    <!-- Your page content goes here -->
 </body>
 </html>
 
